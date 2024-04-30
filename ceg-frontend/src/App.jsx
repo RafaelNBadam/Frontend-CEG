@@ -9,7 +9,7 @@ function Header() {
     <>
    <div className='header'>
     <div className='logoHeader'>
-  <img src="https://cdn-icons-png.flaticon.com/512/3226/3226094.png" alt="logo" className="logo"/>
+  <img src="src/images/ceg-logo.png" alt="logo" className="logo"/>
    </div>
 
   <div className='menu'>
@@ -22,6 +22,8 @@ function Header() {
 
   <div className='icons'>
    <MdOutlineMailOutline size={25}/>
+   <h1>Login</h1>
+   <h1>Cadastro</h1>
    </div>
 
    </div>
@@ -29,9 +31,14 @@ function Header() {
   )
 }
 
+
+
+
 const Slide = styled.div`
   display: ${props => props.active ? 'block' : 'none'};
 `;
+
+// Estilizar a imagem do slide
 
 // Componente principal do slide
 const SlideShow = ({ slides, interval }) => {
@@ -64,14 +71,13 @@ SlideShow.propTypes = {
 // Exemplo de uso
 const App = () => {
   const slides = [
-    <img key="slide1" src="https://media.istockphoto.com/id/1411422037/pt/foto/flamingo.jpg?s=2048x2048&w=is&k=20&c=PL4Xl_j4q8XdwzvbrdP3ZA-B6Wex0uPMfjCJTrcYIhU=" alt="Slide 1" />,
-    <img key="slide2" src="https://media.istockphoto.com/id/508496270/pt/foto/flamingo-chileno.jpg?s=1024x1024&w=is&k=20&c=_UKGkl4zR2tp_Nj8dzSIuT25LmsJkox_yo5uPEK36rQ=" alt="Slide 2" />,
-    <img key="slide3" src="https://media.istockphoto.com/id/1284299891/pt/foto/pink-flamingos.jpg?s=2048x2048&w=is&k=20&c=HCqsU5d5h6YYyzpXgSuuaTtZgXuvt4uNCVYK8EN_C6A=" alt="Slide 3" />,
+    <img className='slideshow' key="slide1" src="" alt="Slide 1" />,
+    <img className='slideshow' key="slide2" src="" alt="Slide 2" />,
+    <img className='slideshow' key="slide3" src="" alt="Slide 3" />,
   ];
 
   return (
     <div>
-      <h1>Meu Slide Show</h1>
       <SlideShow slides={slides} interval={3000} />
     </div>
   );
