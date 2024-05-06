@@ -1,0 +1,47 @@
+.newString{
+    position:fixed;
+ margin-top: 20px;   
+}
+.PrcSlider{
+margin-top: 55px;
+margin-left: 0px;
+position: fixed;
+width: 15%;
+height: 28px;
+background: #ddd;
+outline: none;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+}
+
+.PrcSlider:hover {
+  opacity: 1;
+}
+
+.PrcSlider::-webkit-slider-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+  appearance: none;
+}
+
+.PrcSlider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.PrcValue{
+position: fixed;
+margin-top: 55px;
+margin-left: 250px
+}
+
+.gratuito{
+  position: fixed;
+  margin-left: 390px;
+  margin-top: 55px;
+}
