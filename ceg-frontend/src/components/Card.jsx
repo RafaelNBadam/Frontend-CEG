@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {SearchBar, SearchBar3} from './SearchBar';
+import {SearchBar, SearchBar2} from './SearchBar';
 import SrcButton from './ButtonGroup';
 import PriceRangeSlider from './PriceSlider';
 
@@ -26,6 +26,7 @@ flex-direction: column;
 `;
 
 const SearchOpt = styled.div`
+height: 100px;
 display: flex;
 justify-content: space-between;
 `;
@@ -34,7 +35,7 @@ const Card = () => {
     <CardContainer>
       <SearchBars>
       <SearchBar />
-      <SearchBar3 />
+      <SearchBar2 />
       </SearchBars>
       <SearchOpt>
       <PriceRangeSlider />
