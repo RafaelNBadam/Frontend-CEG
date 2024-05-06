@@ -8,6 +8,7 @@ const SearchInput = styled.input`
   border-radius: 4px;
   margin-left: 0px;
   margin: 30px;
+  color: black;
   background-color: #E5E5E5;
 `;
 
@@ -19,7 +20,7 @@ const SearchInput = styled.input`
   </div>
   )
 }
-    const SearchBar3 = () => {
+    const SearchBar2 = () => {
     return (
     <div>
     <h1>Pesquise por instituições</h1>
@@ -27,4 +28,4 @@ const SearchInput = styled.input`
     </div>
   )
   }
-export {SearchBar, SearchBar3};
+export {SearchBar, SearchBar2};

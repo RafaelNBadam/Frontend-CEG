@@ -1,4 +1,5 @@
 import './styles/Header.css'
+import './styles/SlideShow.css'
 import { MdOutlineMailOutline } from "react-icons/md";
 import SlideShow from './components/SlideShow.jsx';
 import Card from './components/Card.jsx';
