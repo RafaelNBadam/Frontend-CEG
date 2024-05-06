@@ -1,0 +1,13 @@
+.SrcSlides{
+    display: flex;
+    color: black;
+}
+
+.Slides{
+    display: flex;
+}
+
+.Search{
+    display: flex;
+    color: black;
+}
