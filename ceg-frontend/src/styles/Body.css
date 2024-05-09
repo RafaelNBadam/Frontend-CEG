@@ -1,0 +1,18 @@
+
+
+.Card{
+      margin-left: -75px;
+    }
+
+    .banner{
+        position: absolute; /* Posição fixa para que o banner fique na mesma posição enquanto você rola a página */
+        top: 0; /* Ajusta a posição do banner no topo da página */
+        left: 0; /* Ajusta a posição do banner na extremidade esquerda da página */
+        z-index: -1; /* Define a profundidade do banner atrás de todos os outros elementos */
+        margin-top: 100px;; /* Fixa a imagem para que ela permaneça no lugar enquanto você rola a página */
+    }
+    
+    img{
+      width: 1620px;
+      height: 690px;
+        }

@@ -3,17 +3,19 @@ import styled from "styled-components";
 
 const StyledPriceRangeSlider = styled.div`
   .newString {
-    position: fixed;
+    position: absolute;
     margin-top: 20px;
+    color: black;
   }
   .PrcSlider {
+    -webkit-appearance: none;
     position: fixed;
     display: flex;
-    margin-top: -30px;
-    margin-left: 0px;
+    margin-top: -19px;
+    margin-left: -355px;
     width: 15%;
-    height: 28px;
-    background: #ddd;
+    height: 10px;
+    background: #d3d3d3;
     outline: none;
     opacity: 0.7;
     -webkit-transition: 0.2s;
@@ -30,6 +32,7 @@ const StyledPriceRangeSlider = styled.div`
     background: #4caf50;
     cursor: pointer;
     appearance: none;
+    border-radius: 50%;
   }
 
   .PrcSlider::-moz-range-thumb {
@@ -40,16 +43,17 @@ const StyledPriceRangeSlider = styled.div`
   }
 
   .PrcValue {
+    color: black;
     position: fixed;
     display: flex;
-    margin-top: -28px;
-    margin-left: 260px;
+    margin-top: -26px;
+    margin-left: -100px;
   }
 
   .toggleContainer {
     position: fixed;
     display: flex;
-    margin-left: 360px;
+    margin-left: 350px;
     margin-top: 50px;
     display: inline-block;
     position: relative;
@@ -90,11 +94,13 @@ const StyledPriceRangeSlider = styled.div`
   }
 
   .newString {
+    margin-left: -4px;
     display: ${(props) => (props.isOn ? "none" : "block")};
   }
 
   .FreeString{
     display: flex;
+    color: black;
     position: fixed;
     margin-top: -29px;
     margin-left: 430px;
@@ -128,6 +134,7 @@ function PriceRangeSlider() {
           <input type="checkbox" onClick={handleToggle} />
           <span className="toggleSlider"></span>
         </label>
+        <div>
         </div>
         <div>
           <div>
@@ -144,6 +151,7 @@ function PriceRangeSlider() {
           </div>
           <div className="PrcValue">
           <span>R$ {price}</span>
+        </div>
         </div>
         </div>
         <div>

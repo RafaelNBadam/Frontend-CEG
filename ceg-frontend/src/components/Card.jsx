@@ -20,7 +20,7 @@ flex-direction: column;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 20px;
   margin: 20px auto;
-  margin-left: 50px;
+  margin-left: 100px;
   margin-top: 180px;
   gap: 20px;
 `;

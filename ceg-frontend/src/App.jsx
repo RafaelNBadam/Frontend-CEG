@@ -1,9 +1,12 @@
 import './styles/Header.css'
 import './styles/SlideShow.css'
+import './styles/Body.css'
 import { MdOutlineMailOutline } from "react-icons/md";
 import SlideShow from './components/SlideShow.jsx';
 import Card from './components/Card.jsx';
-function Header() {
+import { Link } from 'react-router-dom'; // Importe o Link se estiver usando React Router
+
+function HeaderApp() {
   return (
     <>
    <div className='header'>
@@ -12,11 +15,11 @@ function Header() {
    </div>
 
   <div className='menu'>
-   <h1>Página Inicial</h1>
-   <h1>Cursos</h1>
-   <h1>Instituições</h1>
-   <h1>Sobre</h1>
-   <h1>Contatos</h1>
+   <Link to ="/">Página Inicial</Link>
+   <Link to="/courses">Cursos</Link>
+   <Link to='/institutions'>Instituições</Link>
+   <Link to='/about'>Sobre</Link>
+   <Link to='/contact'>Contatos</Link>
    </div>
 
   <div className='icons'>
@@ -29,6 +32,8 @@ function Header() {
     </>
   )
 }
+
+
 const slidesData = [
   'Slide 1 Content',
   'Slide 2 Content',
@@ -46,12 +51,17 @@ const App = () => {
 
 const MenuSearch = () => {
   return (
+    <>
+    <div className='banner'>
+      <img src="src/images/banner_slider.jpg" alt=""/>
+    </div>
     <div className='Card'>
       <Card />
     </div>
+  </>
   );
 }
 
 
 
-export {Header, App, MenuSearch};
+export {HeaderApp, App, MenuSearch};
