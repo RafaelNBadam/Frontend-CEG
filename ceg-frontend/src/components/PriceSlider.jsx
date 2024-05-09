@@ -102,13 +102,14 @@ const StyledPriceRangeSlider = styled.div`
 `;
 
 function PriceRangeSlider() {
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState(0); 
   const [isOn, setIsOn] = useState(false);
 
   const handleSliderChange = (event) => {
-    setPrice(event.target.value);
+    setPrice(event.target.value); // Converte o valor do evento para inteiro
+    // Verifica se o novo valor é 0 para mudar para string, caso contrário mantém como número
   };
-
+  
   const handleToggle = () => {
     setIsOn(!isOn);
     // Aqui você pode adicionar a lógica para selecionar "grátis" quando o botão é ligado
